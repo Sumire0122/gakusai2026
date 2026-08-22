@@ -10,6 +10,10 @@ document.getElementById("start-btn").addEventListener("click", function() {
   this.style.display = "none";
   document.querySelector(".kitchen-main").style.display = "block";
 
+  notifySound.play();
+  notifySound.pause();
+  notifySound.currentTime = 0;
+  
   loadOrders();
   setInterval(loadOrders, 3000);
 });
