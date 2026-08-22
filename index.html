@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>受付画面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <h1 class="shop-name">次郎、メキシコ行くってよ</h1>
+        <div class="drink-badge">ドリンクALL ¥100</div>
+    </header>
+
+    <main>
+        <div id="order-view" class="menu-area">
+            <!-- タコス(メインなので大きめカード) -->
+            <div class="menu-card main-item" data-name="タコス" data-price="500">
+                <div class="price-tag">¥500</div>
+                <img src="image/tacos.webp" alt="タコス">
+                <p class="menu-name">タコス</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <!-- ドリンク6種(このカードをコピペして増やす) -->
+            <div class="menu-card" data-name="いちごドリンク(炭酸あり)" data-price="100">
+                <img class="drink-menu" src="image/A.png" alt="いちごドリンク(炭酸あり)">
+                <p class="menu-name">いちごドリンク(炭酸あり)</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        <!-- ↑これを残り5種類分コピペ -->
+            <div class="menu-card" data-name="ブルードリンク(炭酸あり)" data-price="100">
+                <img class="drink-menu" src="image/B.png" alt="ブルードリンク(炭酸あり)">
+                <p class="menu-name">ブルードリンク(炭酸あり)</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="メロンドリンク(炭酸あり)" data-price="100">
+                <img class="drink-menu" src="image/C.png" alt="メロンドリンク(炭酸あり)">
+                <p class="menu-name">メロンドリンク(炭酸あり)</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="いちごドリンク(水割り)" data-price="100">
+                <img class="drink-menu" src="image/A.png" alt="いちごドリンク(水割り)">
+                <p class="menu-name">いちごドリンク(水割り)</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="ブルードリンク(水割り)" data-price="100">
+                <img class="drink-menu" src="image/B.png" alt="ブルードリンク(水割り)">
+                <p class="menu-name">ブルードリンク(水割り)</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="メロンドリンク(水割り)" data-price="100">
+                <img class="drink-menu" src="image/C.png" alt="メロンドリンク(水割り)">
+                <p class="menu-name">メロンドリンク(水割り)</p>
+                <div class="counter">
+                    <button class="minus">−</button>
+                    <span class="qty">0</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="number-view" class="number-area" style="display: none;">
+            <!-- 整理番号の表示部分 -->
+             <p class="number-label">整理番号</p>
+             <div class="number-box">1</div>
+        </div>
+    </main>
+
+    <footer class="order-summary">
+        <p class="label">注文内容</p>
+        <div class="order-list">
+            <!-- ここにJSで注文内容のカードが追加されていく -->
+        </div>
+        <p class="label">合計金額</p>
+        <div class="total">
+            <span>¥</span>
+            <span class="total-price">0</span>
+        </div>
+        <button class="confirm-btn">注文確定</button>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

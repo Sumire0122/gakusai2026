@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>キッチン画面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/kitchen.css">
+</head>
+
+<body>
+    <header class="kitchen-header">
+        <div class="logo">LOGO</div>
+        <h1 class="kitchen-title">オーダーシート</h1>
+    </header>
+
+    <button id="start-btn" class="start-btn">タップして開始</button>
+
+    <main class="kitchen-main" style="display: none;">
+        <div id="active-list" class="active-list">
+            <!-- ここにJSで未着手・呼び出し中の注文カードが追加される -->
+        </div>
+
+        <div class="divider"></div>
+        <p class="history-label">↓ 履歴 ↓</p>
+
+        <div id="history-list" class="history-list">
+            <!-- ここにJSで受け渡し済みの注文カードが追加される -->
+        </div>
+    </main>
+
+    <script src="JS/kitchen.js"></script>
+</body>
+</html>
