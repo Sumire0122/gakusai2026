@@ -1,6 +1,6 @@
 const GAS_URL = "https://script.google.com/macros/s/AKfycbwxS7JnKWE49tvIITJ9XEGYbwTLfJ8Uu6M11zl4dYXGug_OQb3O2evO_R0dnOtt5ohR/exec";
 
-const notifySound = new Audio("audio/decision.mp3");
+const notifySound = new Audio("audio/1fuujoro.mp3");
 let knownNumbers = [];
 let soundEnabled = false;
 let isUpdating = false; // 状態更新中かどうか
